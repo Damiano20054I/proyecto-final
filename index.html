@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Impacto de la Tecnología</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 1.5px;
+      padding: 1.5px;
+      line-height: 1.4;
+    }
+    header, footer {
+      background: #4A90E2;
+      color: white;
+      text-align: center; /*encabeza*/
+      padding: 1em;
+    }
+    p {
+        margin: 45.5px;
+        padding: 0;
+    }
+    ul li {
+        margin: 11.5px;
+    }
+    a:hover {  /*mouse*/
+     background-color: #696666;
+     border-radius: 5px;
+    }
+    nav ul {
+      display: flex;  /*llll*/
+      justify-content: center;
+      list-style: none;
+      background: #e3dede;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      position: relative;
+    }
+    nav ul li a {
+      display: block;
+      padding: 10px 15px; /*epo*/
+      color: #333333;
+      text-decoration: none; 
+    }
+    .submenu {
+      display: none; /*o*/
+      position: absolute;
+      top: 100%;
+      left: 0; /*aliniado*/
+      background: rgb(209, 209, 213);
+      list-style: none; /*fuera*/
+      margin: 0;
+      border-radius: 10px;
+    }
+    
+    nav ul li:hover .submenu { /*sub spawn*/
+      display: block;
+    }
+
+    .cuadrada {
+     display: block;
+     width: 80%;       
+     max-width: 600px; /* no cre d en p bigs */
+     height: auto;
+     transition: transform 0.5s ease; /* trans */
+     margin: 0 auto; /* esto c h */
+    }
+
+    .cuadrada:hover {
+     transform: scale(1.1); /* aum t mouse */
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <header>
+     <h1>El Impacto de la IA en la Sociedad</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#Inicio">Inicio</a></li>
+      <li>
+        <a href="#Impacto">Impacto</a>
+        <ul class="submenu">
+            <li><a href="#Positivos">Positivos</a></li>
+            <li><a href="#Negativos">Negativos</a></li>
+        </ul>
+      </li>
+      <li><a href="#Conclusion">Conclusion</a></li>
+      <li><a href="#Contacto">Contacto</a></li>
+    </ul>
+  </nav>
+ <main>
+    <section id="Inicio">
+        <h2 style="text-align: center;">Bienvenidos</h2>
+        <p>La Inteligencia Artificial (IA) ha dejado de ser un concepto futurista reservado para la ciencia ficción
+         para convertirse en una realidad y presente en nuestra vida diaria. Desde los algoritmos 
+         que personalizan nuestras recomendaciones de películas, música o productos, hasta los sistemas complejos 
+         que asisten en diagnósticos médicos, la IA está revolucionando la forma en que interactuamos con la tecnología, 
+         tomamos decisiones y entendemos el mundo que nos rodea.
+        </p>
+        <p>Su impacto se extiende a múltiples sectores: en la medicina, permite detectar enfermedades como 
+         el cáncer con mayor precisión y rapidez que muchos métodos tradicionales; en la educación, facilita 
+         procesos de aprendizaje personalizado a través de plataformas adaptativas; en la agricultura, 
+         optimiza el uso de recursos mediante análisis predictivo; y en el transporte, está detrás del 
+         desarrollo de vehículos autónomos que prometen reducir accidentes y transformar la movilidad urbana.
+        </p>
+        <p>En resumen, la IA representa una de las fuerzas más transformadoras de nuestro tiempo. Su potencial 
+         es inmenso, pero su impacto dependerá de cómo la humanidad decida emplearla: si como una herramienta 
+         para el progreso colectivo o como un medio que acentúe las brechas existentes. Por ello, se vuelve 
+         indispensable fomentar un diálogo crítico y multidisciplinario que involucre a científicos, 
+         desarrolladores, políticos, educadores y ciudadanos, con el fin de construir un futuro en el que 
+         la inteligencia artificial esté verdaderamente al servicio de todos.
+
+        </p>
+    </section>
+
+    <section id="Impacto">
+        <article id="Positivos">
+            <h3 style="margin: 45.5px;">Impactos Positivos de la Inteligencia Artificial:</h3>
+            <img src="positivos.jpg" alt="imagen positivas" class="cuadrada">
+            <ul style="margin: 30.5px;">
+             <li><strong>Medicina:</strong>
+                La IA permite detectar enfermedades como el cáncer con mayor precisión y rapidez que muchos 
+                métodos tradicionales. También asiste en diagnósticos, tratamientos personalizados y análisis 
+                de imágenes médicas.
+             </li>
+             <li><Strong>Educación:</Strong>  
+                Facilita procesos de aprendizaje personalizado mediante plataformas adaptativas que se ajustan 
+                al ritmo y estilo de cada estudiante.
+             </li>
+                <li><Strong>Productividad y automatización:</Strong>
+                Aumenta la eficiencia en tareas repetitivas o complejas, liberando tiempo para la creatividad y 
+                la innovación en muchas profesiones.
+                </li>
+            </ul>
+        </article>
+
+        <article id="Negativos">
+            <h3 style="margin: 45.5px;">Impactos Negativos de la Inteligencia Artificial:</h3>
+            <img src="trabajo-robots.jpg" alt="imagen negativa" class="cuadrada">
+            <ul style="margin: 30.5px;">
+              <li><strong>Desempleo tecnológico:</strong> 
+                Muchas tareas automatizadas pueden reemplazar empleos 
+                humanos, especialmente en sectores repetitivos.</li>
+              <li><strong>Privacidad:</strong> 
+                La IA puede ser usada para recolectar y analizar datos 
+                personales de manera invasiva.</li>
+              <li><strong>Discriminación algorítmica:</strong> 
+                Si los algoritmos se entrenan con datos sesgados, pueden 
+                perpetuar desigualdades.</li>
+                <li><Strong>Falta de regulación:</Strong>
+                La ausencia de marcos éticos y legales adecuados puede llevar a un uso 
+                irresponsable de la tecnología, afectando la equidad, la justicia y los 
+                derechos humanos.</li>
+            </ul>
+        </article>
+          
+    </section>
+
+    <section id="Conclusion">
+        <h3 style="margin: 45.5px; margin-bottom: 5px;">Conclusiones</h3>
+        <p style="margin-top: 0.1px;" >
+         la IA no es ni buena ni mala por sí misma; su impacto dependerá del uso que la sociedad haga de ella. 
+         Es crucial fomentar un desarrollo responsable, inclusivo y ético de estas tecnologías, donde el bienestar
+         humano esté en el centro de cada decisión. Solo así podremos garantizar que la inteligencia artificial 
+         esté verdaderamente al servicio de todos.
+        </p>
+    </section>
+    
+    <section id="Contacto">
+        <p style="text-align: center;">
+            <i class="fab fa-github" style="color: #1877f2;"></i> GitHub     
+            <a href="https://github.com/Damiano20054I" style="text-decoration: none;" target="_blank">github.com/Damiano20054I</a>
+        </p>
+        <p style="text-align: center;">
+            <i class="fas fa-envelope" style="color: #ea4335;"></i> Correo: 
+            <a href="mailto:damianmaldonado241@gmail.com" style="text-decoration: none;">damianmaldonado241@gmail.com</a>
+        </p>
+    </section>
+ </main>
+ <footer>
+    <p>&copy; Creado por Damian David Maldonado Osorio</p>
+  </footer>
+</body>
+</html>
